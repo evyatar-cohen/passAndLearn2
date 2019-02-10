@@ -8293,7 +8293,8 @@ p.nominalBounds = new cjs.Rectangle(0,-201.9,632.7,403.9);
 			}
 		};
 		//הוספות דינאמיות של קבצי סאונד
-		
+        createjs.Sound.registerSound("sounds/shadranimSound.mp3", "shadranimSound");
+        createjs.Sound.registerSound("sounds/crowdSound.mp3", "crowdSound");
 		
 		(function () {
 			var wf = document.createElement('script');
@@ -8526,8 +8527,7 @@ p.nominalBounds = new cjs.Rectangle(0,-201.9,632.7,403.9);
 		
 		function shadranim() //פונקציה למסך השדרנים ולכפתור התחלת המשחק
 		{
-			createjs.Sound.registerSound("../sounds/shadranimSound.mp3","shadranimSound");
-		    createjs.Sound.registerSound("../sounds/crowdSound.mp3","crowdSound");
+			
 			score = 0;//איפוס הזמן בכל משחק חדש
 			gameMaker();
 			createjs.Sound.play("shadranimSound");
